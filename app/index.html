@@ -33,7 +33,7 @@
             Navigation Menu
             <ul class="side-menu">
                 <li class='active'><a href='#'><span>Home</span></a></li>
-                <li><a href='#'><span>Most Popular</span></a></li>
+                <li><a href='#/popular'><span>Most Popular</span></a></li>
                 <li><a href='#'><span>Most Voted</span></a></li>
                 <li><a href='#'><span>Recommended for me</span></a></li>
                 <li class='last'><a href='#'><span>My Profile</span></a></li>
@@ -64,13 +64,20 @@
 -->
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/underscore/underscore.js"></script>
 <script src="app.js"></script>
 <script src="view1/view1.js"></script>
 <script src="view2/view2.js"></script>
+
 <script src="core/hf-core.js"></script>
 <script src="core/directives/login-directive.js"></script>
+
+<script src="core/controllers/login-controller.js"></script>
 <script src="core/controllers/login-view-controller.js"></script>
+<script src="core/controllers/most-popular-controller.js"></script>
+
 <script src="core/services/login-service.js"></script>
+
 <script src="components/version/version.js"></script>
 <script src="components/version/version-directive.js"></script>
 <script src="components/version/interpolate-filter.js"></script>

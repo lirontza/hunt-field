@@ -7,4 +7,9 @@ angular.module('hf.core', ['ngRoute'])
             templateUrl: 'core/templates/login-view-template.html',
             controller: 'LoginViewController'
         });
+
+        $routeProvider.when('/popular', {
+            templateUrl: 'core/templates/most-popular-view-template.html',
+            controller: 'MostPopularController'
+        });
     }]);

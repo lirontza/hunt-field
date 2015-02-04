@@ -2,6 +2,7 @@
 
 .doc-bg {
     background-color: #240000;
+    color: rgba(175, 175, 175, 0.91);
 }
 
 body {
@@ -16,7 +17,6 @@ body {
     display: flex;
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
-    font-weight: bold;
     text-align: center;
     background: #240000;
 }
@@ -104,7 +104,7 @@ body {
     list-style: none;
 }
 .side-menu a {
-    color: #e8e8e8;
+    color: rgba(175, 175, 175, 0.91);
     display: block;
     margin: 0;
     padding: 8px 12px;
@@ -124,19 +124,15 @@ body {
 }
 
 .link-like {
-    color: white;
+    color: rgba(175, 175, 175, 0.91);
 }
 
 .hor-stack {
     display: flex;
 }
 
-.hor-stack > *:first-child {
+.hor-stack-label > *:first-child {
     width: 100px;
-}
-
-.hor-stack > * {
-    margin-left: 5px;
 }
 
 .vert-stack {
@@ -144,8 +140,24 @@ body {
     flex-direction: column;
 }
 
-.vert-stack > * {
+.hf-vert-stack-loose > * {
     margin-top: 10px;
+}
+
+.hf-vert-stack-v-loose > * {
+    margin-top: 30px;
+}
+
+.hf-vert-stack-tight > * {
+    margin-right: 5px;
+}
+
+.hf-hor-stack-loose > * {
+    margin-right: 10px;
+}
+
+.hf-hor-stack-tight > * {
+    margin-top: 5px;
 }
 
 .hf-button {
@@ -154,4 +166,15 @@ body {
 
 .hf-fcon-center {
     justify-content: center;
+}
+
+.hf-user-error-message {
+    color: rgba(190, 0, 0, 0.80);
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+.hf-video-outline {
+    margin-top: 0px
 }

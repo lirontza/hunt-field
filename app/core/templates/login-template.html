@@ -1,7 +1,12 @@
-<div>
+<div class="hor-stack hf-hor-stack-loose">
     <img class="icon-size" src="resources/user-no-bg.png" />
-    <ng-if>
+    <div ng-if="loginModel.user == null">
+        <a class="link-like" href="#/login">Sign in</a>
+    </div>
 
-    </ng-if>
-    <a class="link-like" href="#/login">Sign in</a>
+    <div ng-if="loginModel.user != null">
+        <span>{{loginModel.user.name}}</span>
+        <span>|</span>
+        <a class="link-like" href="#" ng-click="logout()">Sign out</a>
+    </div>
 </div>

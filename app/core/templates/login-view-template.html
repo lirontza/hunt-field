@@ -1,18 +1,23 @@
-<div class="vert-stack">
+<div class="vert-stack hf-vert-stack-loose">
+    <!-- error: bad credentials -->
+    <div ng-if="errors.badCredentials == true">
+        <span class="hf-user-error-message">Please check the username and password and try again</span>
+    </div>
+
     <!-- user name -->
-    <div class="hor-stack">
+    <div class="hor-stack hf-hor-stack-loose hor-stack-label">
         <label>User name:</label>
         <input type="text" ng-model="user.name"/>
     </div>
 
     <!-- password -->
-    <div class="hor-stack">
+    <div class="hor-stack hf-hor-stack-loose hor-stack-label">
         <label>Password:</label>
         <input type="text" ng-model="user.password"/>
     </div>
 
     <!-- submit -->
-    <div class="hor-stack hf-fcon-center">
+    <div class="hor-stack hf-hor-stack-loose hf-fcon-center">
         <button class="hf-button" ng-click="signIn()">Sign in</button>
     </div>
 </div>

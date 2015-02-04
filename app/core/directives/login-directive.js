@@ -4,9 +4,7 @@ angular.module('hf.core').directive('hfLogin', [function () {
         restrict: 'E',
         replace: true,
         templateUrl: 'core/templates/login-template.html',
-        scope: {
-
-        },
+        controller: 'LoginController',
         link: function () {
         }
     };
